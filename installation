@@ -1,0 +1,26 @@
+1. Setup Project Files Raspberry Pi Django Web App
+
+mkdir djangoproject
+cd djangoproject
+
+2. Install Virtual Environment for Django Web App
+
+pip3 install virtualenv
+or
+sudo pip3 install virtualenv
+
+3. Create Virtual Environment and Activate
+
+virtualenv venv && source venv/bin/activate
+
+4. Install Django on your Raspberry Pi, and Create the Project Files
+
+pip3 install django
+django-admin startproject raspberrypiapp
+cd raspberrypiapp
+
+5. Migrate Changes and Start the Server!
+
+python3 manage.py migrate
+
+python3 manage.py runserver 
